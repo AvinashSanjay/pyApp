@@ -1,0 +1,24 @@
+<layoutLogin>:
+
+    email:email
+    passwd:passwd
+    tit:tit
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 80, 80
+        Label:
+            id:tit
+            text: "LOGIN"
+            color: 0.89, 0.37, 0.37
+        TextInput:
+            id: email
+            hint_text: "Email...."
+            font_size: 20
+        TextInput:
+            id: passwd
+            hint_text: "PassPharse...."
+            password: True
+        Button:
+            text: "Sign-In"
+            on_press:root.login()
